@@ -45,6 +45,28 @@
 
 ---
 
+### Day 03 · 2026-07-07 晚 — 字典 + 编码
+
+> 遇见 UnicodeDecodeError，学会了编码；引入字典，搞定键值对
+
+`day03-dict/`
+
+| 文件 | 内容 |
+|------|------|
+| `26-7-7(4).py` | 热身：独立写出文件→列表，遇到 GBK 解码错误，加 `encoding='utf-8'` 修复 |
+| `26-7-7(5).py` | 字典入门：`enumerate()` 同时拿序号和行，`lyrics_dict[i] = line.strip()` 键值赋值 |
+| `config.txt` | 测试用歌词文件（46 行中文） |
+
+**新接触的概念：**
+`dict` `{ }` `enumerate()` `f.readlines()` `encoding='utf-8'` `键值赋值`
+
+**踩坑记录：**
+- `open()` 在 Windows 上默认用 GBK 读，中文文件报 `UnicodeDecodeError` → 显式指定 `encoding='utf-8'`
+- `f` 是文件对象（file object），不是函数——带括号调用的才是函数
+- 字典用 `[键]` 取值和赋值，列表用 `[下标]`；字典没有 `.append()`
+
+---
+
 ## 环境
 
 - Python 3.12
