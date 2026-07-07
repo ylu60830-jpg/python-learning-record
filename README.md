@@ -27,42 +27,27 @@
 
 ---
 
-### Day 02 · 2026-07-07 — 复习巩固 + 列表
+### Day 02 · 2026-07-07 — 复习巩固 + 列表 + 字典
 
-> 上午复习，下午学新概念列表，傍晚组合运用
+> 上午复习文件操作，下午列表入门，傍晚组合运用，晚上字典 + 编码
 
 `day02-list/`
 
 | 文件 | 内容 |
 |------|------|
 | `26-7-7.py` | 复习：换场景独立写出（ips.txt → hosts.txt） |
-| `26-7-7（2）.py` | 热身：隔半天再写一次（config.txt） |
+| `26-7-7（2）.py` | 热身：隔半天再写一次 |
 | `26-7-7(3).py` | 列表探索：`[]` 创建、`[0]` 下标、`[4]` 访问 |
-| `26-7-7(4).py` | 组合：文件读取 + 列表 `.append()` + `len()` |
-
-**新接触的概念：**
-`list` `[ ]` `下标访问` `.append()` `len()`
-
----
-
-### Day 03 · 2026-07-07 晚 — 字典 + 编码
-
-> 遇见 UnicodeDecodeError，学会了编码；引入字典，搞定键值对
-
-`day03-dict/`
-
-| 文件 | 内容 |
-|------|------|
-| `26-7-7(4).py` | 热身：独立写出文件→列表，遇到 GBK 解码错误，加 `encoding='utf-8'` 修复 |
-| `26-7-7(5).py` | 字典入门：`enumerate()` 同时拿序号和行，`lyrics_dict[i] = line.strip()` 键值赋值 |
+| `26-7-7(4).py` | UnicodeDecodeError → `encoding='utf-8'` 修复；下标取首尾行 |
+| `26-7-7(5).py` | 字典入门：`enumerate()` + `lyrics_dict[i] = line.strip()` |
 | `config.txt` | 测试用歌词文件（46 行中文） |
 
 **新接触的概念：**
-`dict` `{ }` `enumerate()` `f.readlines()` `encoding='utf-8'` `键值赋值`
+`list` `[ ]` `下标访问` `.append()` `len()` `dict` `{ }` `enumerate()` `f.readlines()` `encoding='utf-8'`
 
 **踩坑记录：**
 - `open()` 在 Windows 上默认用 GBK 读，中文文件报 `UnicodeDecodeError` → 显式指定 `encoding='utf-8'`
-- `f` 是文件对象（file object），不是函数——带括号调用的才是函数
+- `f` 是文件对象（file object），不是函数
 - 字典用 `[键]` 取值和赋值，列表用 `[下标]`；字典没有 `.append()`
 
 ---
