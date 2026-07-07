@@ -19,7 +19,7 @@
 
 | 文件 | 内容 |
 |------|------|
-| `01_read_file.py` | 完整注释版：`import os` → `with open` → `for line` → `strip()` |
+| `26-7-6.py` | 完整注释版：`import os` → `with open` → `for line` → `strip()` |
 | `ips.txt` | 测试用文件（放一个 IP 地址） |
 
 **首次接触的概念：**
@@ -35,10 +35,10 @@
 
 | 文件 | 内容 |
 |------|------|
-| `01_review_hosts.py` | 复习：换场景独立写出（ips.txt → hosts.txt） |
-| `02_warmup_config.py` | 热身：隔半天再写一次（config.txt） |
-| `03_list_basics.py` | 列表探索：`[]` 创建、`[0]` 下标、`[4]` 访问 |
-| `04_file_to_list.py` | 组合：文件读取 + 列表 `.append()` + `len()` |
+| `26-7-7.py` | 复习：换场景独立写出（ips.txt → hosts.txt） |
+| `26-7-7（2）.py` | 热身：隔半天再写一次（config.txt） |
+| `26-7-7(3).py` | 列表探索：`[]` 创建、`[0]` 下标、`[4]` 访问 |
+| `26-7-7(4).py` | 组合：文件读取 + 列表 `.append()` + `len()` |
 
 **新接触的概念：**
 `list` `[ ]` `下标访问` `.append()` `len()`
