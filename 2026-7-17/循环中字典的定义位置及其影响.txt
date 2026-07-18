@@ -1,0 +1,20 @@
+在使用字典的循环时，字典不同的定义位置会分别造成什么影响
+A：字典放在循环外，用于统计/累计
+ 例：统计每个等级的人数
+grade_count = {}           # ← 字典在外面，只要一个
+  for line in f:
+      name = line.strip()
+      grade_count[name] = grade_count.get(name, 0) + 1
+      #               ↑ 不断往同一个字典里加东西
+ 结果：{"优秀": 3, "良好": 4, "及格": 1}
+     一个字典，8条数据全在里面
+B:字典在循环内部，用于收集多条记录
+result = []                # ← 列表在外面，只要一个
+  for line in f:
+      item = {}              # ← 字典在里面，每轮新建
+      item["name"] = ...
+      item["score"] = ...
+      result.append(item)    # 把这张新便利贴贴上去
+
+结果：[{"name":"张三","score":85}, {"name":"李四","score":92}, ...]       
+一个列表，里面装了 8 个独立的字典
