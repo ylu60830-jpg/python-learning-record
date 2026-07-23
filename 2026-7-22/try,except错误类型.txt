@@ -1,0 +1,9 @@
+# ① IndexError——你取了一个不存在的位置
+row = ["张三"]         # 只有 1 个元素
+print(row[2])          # 取第 3 个？→ 报 IndexError
+
+# ② ValueError——类型不匹配
+int("八十五")           # 把中文转数字？→ 报 ValueError
+
+# ③ FileNotFoundError
+open("这个文件不存在.txt")  # → 报 FileNotFoundError

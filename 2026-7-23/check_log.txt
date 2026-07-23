@@ -1,0 +1,5 @@
+Router,0
+Switch,0
+Firewall,5
+AP-01,0
+AP-02,1
